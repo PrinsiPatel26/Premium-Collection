@@ -1,0 +1,42 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-serif: 'Playfair Display', serif;
+    --font-sans: 'Inter', sans-serif;
+    --color-gold: #D4AF37;
+    --color-gold-light: #F4E5BC;
+  }
+  
+  body {
+    font-family: var(--font-sans);
+    @apply text-gray-900 bg-white antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+  }
+}
+
+@layer utilities {
+  .font-serif {
+    font-family: var(--font-serif);
+  }
+  
+  .text-gold {
+    color: var(--color-gold);
+  }
+  
+  .bg-gold {
+    background-color: var(--color-gold);
+  }
+  
+  .border-gold {
+    border-color: var(--color-gold);
+  }
+}
